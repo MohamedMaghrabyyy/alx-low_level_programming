@@ -1,29 +1,19 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 /**
  * main - main function
+ * @message - pointer to char array
+ * @len - length of array
  *
- * @maxlen: limit
- * @message[]: array to take string
- * Return: 1
+ * return: 1
  */
 int main(void)
 {
-	int maxlen=50;
-	char message[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19,";
+	const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	size_t len = strlen(message);
 
-	for (int i = 0; i < maxlen; i++)
-	{
-		if (message[i] == '\0')
-		{
-			putchar('\n');
-			break;
-		}
-	
-	else
-		putchar(message[i]);
-	}
-		
+	write(1,message,len);
 
 	return (1);
 }
