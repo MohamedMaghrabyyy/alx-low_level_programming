@@ -1,16 +1,25 @@
 #include <stdio.h>
 /**
  * main - Main function
+ * @intType: int test
+ * @floatType: Float test
+ * @doubleType: double test
+ * @charType: char test
  *
  * Return: 0 means function terminates
  */
 int main(void)
 {
-	printf("Size of a char: 1 byte(s)");
-	printf("Size of an int: 4 byte(s)");
-	printf("Size of a long int: 8 byte(s)");
-	printf("Size of a long long int: 8 byte(s)");
-	printf("Size of a float: 4 byte(s)");
-	return (0);
 
+	int intType;
+	float floatType;
+	double doubleType;
+	char charType;
+
+        printf("Size of int: %zu bytes\n", sizeof(intType));
+       	printf("Size of float: %zu bytes\n", sizeof(floatType));
+       	printf("Size of double: %zu bytes\n", sizeof(doubleType));
+       	printf("Size of char: %zu byte\n", sizeof(charType));
+    
+	return (0);
 }
