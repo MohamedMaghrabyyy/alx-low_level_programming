@@ -6,14 +6,15 @@
  * @message - pointer to char array
  * @len - length of array
  *
- * return: 1
+ * return: 1 means success
  */
 int main(void)
 {
-	const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	const char* message = "and that piece of art is useful\" -
+	       	Dora Korpar, 2015-10-19";
 	size_t len = strlen(message);
 
-	write(1,message,len);
+	write(1 , message , len);
 
 	return (1);
 }
