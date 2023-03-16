@@ -12,9 +12,9 @@ int main(void)
 	int maxlen=50;
 	char message[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19,";
 
-	for(int i = 0; i < maxlen; i++)
+	for (int i = 0; i < maxlen; i++)
 	{
-		if (message[count] == '\0')
+		if (message[i] == '\0')
 		{
 			putchar('\n');
 			break;
