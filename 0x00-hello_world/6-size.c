@@ -1,25 +1,24 @@
 #include <stdio.h>
 /**
  * main - Main function
- * @intType: int test
- * @floatType: Float test
- * @doubleType: double test
- * @charType: char test
+ * @intType: First member
+ * @floatType: second member
+ * @doubleType: third member
+ * @charType: fourth member
  *
- * Return: 0 means function terminates
+ * Return: 0 means function success
  */
 int main(void)
 {
-
 	int intType;
 	float floatType;
 	double doubleType;
 	char charType;
 
-        printf("Size of int: %zu bytes\n", sizeof(intType));
-       	printf("Size of float: %zu bytes\n", sizeof(floatType));
-       	printf("Size of double: %zu bytes\n", sizeof(doubleType));
-       	printf("Size of char: %zu byte\n", sizeof(charType));
-    
-	return (0);
+	printf("Size of int: %zu bytes\n", sizeof(intType));
+	printf("Size of float: %zu bytes\n", sizeof(floatType));
+	printf("Size of double: %zu bytes\n", sizeof(doubleType));
+	printf("Size of char: %zu bytes\n", sizeof(charType));
+
+	return(0);
 }
