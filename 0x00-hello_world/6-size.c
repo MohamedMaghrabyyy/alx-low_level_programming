@@ -1,10 +1,6 @@
 #include <stdio.h>
 /**
  * main - Main function
- * @intType: First member
- * @floatType: second member
- * @doubleType: third member
- * @charType: fourth member
  *
  * Return: 0 means function success
  */
@@ -20,5 +16,5 @@ int main(void)
 	printf("Size of double: %zu bytes\n", sizeof(doubleType));
 	printf("Size of char: %zu bytes\n", sizeof(charType));
 
-	return(0);
+	return (0);
 }
