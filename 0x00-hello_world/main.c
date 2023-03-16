@@ -1,12 +1,11 @@
 #include <stdio.h>
+
 /**
- * main - Main function
- * return 0 - function ends
-*/
-
-int main()
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	printf("String"\n);
-	return(0);
+    return (0);
 }
-
