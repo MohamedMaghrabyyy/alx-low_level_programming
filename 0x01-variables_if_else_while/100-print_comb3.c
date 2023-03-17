@@ -15,12 +15,14 @@ int main(void)
 		{
 			putchar(c);
 			putchar(n);
-			if(c + n != 113)
+			if (c + n != 113)
 			{
 				putchar(44);
 				putchar(32);
 			}
 		}
 	}
+	putchar('\n');
+
 	return (0);
 }
