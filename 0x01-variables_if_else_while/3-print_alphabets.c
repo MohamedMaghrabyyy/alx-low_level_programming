@@ -16,6 +16,5 @@ int main(void)
 	for (c = 65; c <= 90; c++)
 		putchar(c);
 	putchar('\n');
-	
 	return (0);
 }
