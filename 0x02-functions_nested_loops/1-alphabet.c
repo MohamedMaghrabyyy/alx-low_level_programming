@@ -8,24 +8,11 @@
 void print_alphabet()
 {
 	int i;
-	for(i = 97; i <= 122; i++)
+	for (i = 97; i <= 122; i++)
 	{
 		_putchar(i);
 	}
 	putchar('\n');
-}
 
-
-/** 
- * main - prints alpbabet
- *
- * Return: 0 (terminates)
- */
-int main(void)
-{
-
-	print_alphabet();
-
-	return(0);
-
+	return;
 }
