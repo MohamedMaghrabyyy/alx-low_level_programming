@@ -11,7 +11,6 @@
 
 int print_sign(int n)
 {
-	int i;
 
 	if (i > 0)
 	{
