@@ -13,7 +13,7 @@ void times_table(void)
 	int l;
 	int a;
 	
-	for (i = 0;i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
@@ -47,4 +47,3 @@ void times_table(void)
 	}
 	_putchar('\n');
 }
-       
