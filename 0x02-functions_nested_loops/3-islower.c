@@ -2,10 +2,10 @@
 #include "main.h"
 /**
  * _islower - checks for lower case letter
- * @c - character to check
+ * @c: character to check
  *
  * Return: on success return 1
- * Return: on failure return 0
+ * on failure 0 is returned
  */
 
 int _islower(int c)
