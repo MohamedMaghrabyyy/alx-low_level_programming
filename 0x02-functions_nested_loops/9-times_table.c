@@ -33,6 +33,7 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(l + '0');
 				_putchar(a + '0');
 				if (j == 9)
@@ -40,7 +41,6 @@ void times_table(void)
 					continue;
 				}
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
