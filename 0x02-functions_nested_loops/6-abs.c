@@ -9,6 +9,6 @@
 
 int _abs(int n)
 {
-	return (n*n)/n;
+	return ((n * n) / (n*n));
 
 }
