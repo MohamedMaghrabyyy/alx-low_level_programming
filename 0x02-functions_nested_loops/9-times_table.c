@@ -12,6 +12,7 @@ void times_table(void)
 	int k;
 	int l;
 	int a;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
@@ -21,7 +22,6 @@ void times_table(void)
 			l = k / 10;
 			if (k < 10)
 			{
-				_putchar(' ');
 				_putchar(k + '0');
 				if (j == 9)
 				{
@@ -40,9 +40,10 @@ void times_table(void)
 				}
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
 	}
-	printf("\n");
+	putchar('\n');
 }
