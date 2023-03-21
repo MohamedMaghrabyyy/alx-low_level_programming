@@ -5,54 +5,44 @@
  *
  * Return: print times table
  */
-void times_table(void)
+int main()
 {
-	int i;
-	int j;
-	int k;
-	int l;
-	for (i = 0; i < 10; i++)
+    int i;
+    int j;
+    int k;
+    int l;
+    int a;
+    for (i = 0;i <= 9; i++)
+    {
+        for (j = 0; j <= 9; j++)
 	{
-		for (j = 0 ; j <= 8; j++)
+		k = i * j;
+		a = k % 10;
+		l = k / 10;
+		if (k < 10)
 		{
-			k = j * i;
-			if (i == 9)
+			_putchar(k + '0');
+			if (j == 9)
 			{
-
-			
-				if (k < 10)
-				{
-					_putchar(k + '0');
-				}
-				else
-				{
-					l = k / 10;
-					_putchar(l + '0');
-					_putchar(j + '0');
-				}
-
-
+				continue;
 			}
-			else
-			{
-				if (k < 10)
-                                {
-                                        _putchar(k + '0');
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }
-                                else
-                                {
-                                        l = k / 10;
-                                        _putchar(l + '0');
-                                        _putchar(j + '0');
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }	
-
-			}
-
+			_putchar(',');
+			_putchar(' ');
 		}
-		_putchar('\n');
+		else
+		{
+			_putchar(l + '0');
+			_putchar(a + '0');
+			if (j == 9)
+			{
+				continue;
+			}
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
+	_putchar('\n');
+    }
+    return (0);
 }
+       
