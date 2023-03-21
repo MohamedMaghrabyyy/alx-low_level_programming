@@ -21,6 +21,7 @@ void times_table(void)
 		l = k / 10;
 		if (k < 10)
 		{
+			_putchar(' ');
 			_putchar(k + '0');
 			if (j == 9)
 			{
