@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	unsigned int arr[98] = {0};
-	int i;
+	unsigned long int arr[98] = {0};
+	long i;
 
 	arr[0] = 1;
 	arr[1] = 2;
