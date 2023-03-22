@@ -17,9 +17,9 @@ int main(void)
 	}
 	for (i = 0; i <= 48; i++)
 	{
-		printf("%ld, ", arr[i]);
+		printf("%lld, ", arr[i]);
 	}
-	printf("%ld", arr[49]);
+	printf("%lld", arr[49]);
 
 	return (0);
 
