@@ -9,7 +9,7 @@
 int main(void)
 {
 	int arr[50]={1, 2};
-	int sum = 1;
+	int i;
 
 	for (i = 2; i <= 49 ; i++)
 	{
