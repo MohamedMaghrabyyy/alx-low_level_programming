@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long arr[98] = {0};
+	unsigned long arr[98] = {0};
 	int i;
 
 	arr[0] = 1;
@@ -17,10 +17,11 @@ int main(void)
 	{
 		arr[i] = arr[i - 1] + arr[i - 2];
 	}
-	for (i = 0; i <= 97; i++)
+	for (i = 0; i < 97; i++)
 	{
-		printf("%ld, ", arr[i]);
+		printf("%lu, ", arr[i]);
 	}
+	printf("%lu", arr[97]);
 	printf("\n");
 
 	return (0);
