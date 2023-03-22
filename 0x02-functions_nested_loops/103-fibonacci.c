@@ -9,8 +9,8 @@ int main(void)
 {
 	long arr[100] = {0};
 	int i;
-	long sum;
-	int count;
+	long sum = 0;
+	int count = 0;
 
 	arr[0] = 1;
 	arr[1] = 2;
