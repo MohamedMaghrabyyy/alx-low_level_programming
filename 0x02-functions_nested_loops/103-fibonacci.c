@@ -8,10 +8,11 @@
 int main(void)
 {
 	long arr[100] = {0};
-	arr[0] = 1;
-	arr[1] = 2;
 	int i;
 	long sum;
+
+	arr[0] = 1;
+	arr[1] = 2;
 
 	for (i = 2; i <= 100; i++)
 	{
@@ -33,4 +34,6 @@ int main(void)
 	}
 	printf("%ld", sum);
 	putchar('\n');
+
+	return (0);
 }
