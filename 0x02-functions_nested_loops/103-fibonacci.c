@@ -20,7 +20,7 @@ int main(void)
 		if (arr[i - 1] <= 4000000)
 		{
 			arr[i] = arr[i - 1] + arr[i - 2];
-			count++:
+			count++;
 		}
 		else
 		{
