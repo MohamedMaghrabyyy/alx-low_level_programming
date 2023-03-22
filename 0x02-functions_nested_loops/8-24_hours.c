@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * jack_bauer - prints clock
+ *
+ */
 
 void jack_bauer(void)
 {
@@ -31,20 +35,14 @@ void jack_bauer(void)
 				_putchar(0 + '0');
 				_putchar(j + '0');
 				_putchar('\n');
-
 			}
 			else
 			{
-				k = i % 10;
+				k = j % 10;
 				l = j / 10;
 				_putchar(l + '0');
 				_putchar(k + '0');
 				_putchar('\n');
-			
 			}
-
-				
 		}
-
 	}
-}
