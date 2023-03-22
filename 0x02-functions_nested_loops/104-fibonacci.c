@@ -17,7 +17,7 @@ int main(void)
 	{
 		arr[i] = arr[i - 1] + arr[i - 2];
 	}
-	for(i = 0; i <= 97; i++)
+	for (i = 0; i <= 97; i++)
 	{
 		printf("%ld, ", arr[i]);
 	}
