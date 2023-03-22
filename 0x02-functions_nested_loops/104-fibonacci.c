@@ -21,7 +21,7 @@ int main(void)
 	{
 		printf("%ld, ", arr[i]);
 	}
-	prinf("\n");
+	printf("\n");
 
 	return (0);
 }
