@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long arr[98] = {0};
+	unsigned long int arr[98] = {0};
 	int i;
 
 	arr[0] = 1;
