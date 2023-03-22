@@ -20,6 +20,7 @@ int main(void)
 		printf("%ld, ", arr[i]);
 	}
 	printf("%ld", arr[49]);
+	putchar('\n');
 
 	return (0);
 
