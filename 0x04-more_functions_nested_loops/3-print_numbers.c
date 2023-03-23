@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_numbers - print numbers from 0 to 9
+ * Return: no return
  */
 void print_numbers(void)
 {
@@ -9,7 +10,7 @@ void print_numbers(void)
 
 	for (i = 48; i<= 57; i++)
 	{
-		_putchar(i + '0');
+		_putchar(i);
 	}
 	_putchar('\n');
 }
