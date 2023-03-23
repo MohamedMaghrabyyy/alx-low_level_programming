@@ -8,8 +8,11 @@
 int main(void)
 {
 	int i;
-	
-	printf("%d",1);
+	int k;
+
+
+	k = 1;
+	printf("%d",k);
 	for (i = 2; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
@@ -30,5 +33,6 @@ int main(void)
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
