@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_square - print a square of hashes
- *
+ * @size: size of hashes
  * Return: nothing
  */
 void print_square(int size)
