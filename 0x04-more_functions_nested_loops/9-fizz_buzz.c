@@ -1,14 +1,14 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
- *
- * Return: 0 (terminates)
+ * Return: terminates
  */
 
 int main(void)
 {
 	int i;
-	
+
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
@@ -25,10 +25,9 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d ", i)'
 		}
 	}
-	_putchar('\n');
-	
+	printf("\n");
 	return (0);
 }
