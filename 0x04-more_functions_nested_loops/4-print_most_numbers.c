@@ -1,8 +1,7 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
  * print_most_numbers - prints numbers from 0 to 9 except 2 & 4
- * @i: integer to be checked
  *
  * Return: no return
  */
