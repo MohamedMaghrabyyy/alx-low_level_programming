@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * _isupper - check if entered integer is ascii for an uppercase letter
  * @c: number to be checked
