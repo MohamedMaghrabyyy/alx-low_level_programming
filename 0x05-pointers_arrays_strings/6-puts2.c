@@ -13,6 +13,7 @@ void puts2(char *str)
 
 	for (j = 0; j <= i; j += 2)
 	{
-		putchar(str[j]);
+		printf("%c", str[j]);
 	}
+	printf("\n");
 }
