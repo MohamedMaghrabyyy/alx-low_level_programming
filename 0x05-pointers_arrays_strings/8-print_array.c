@@ -10,6 +10,11 @@
 void print_array(int *a, int n)
 {
 	int i;
+
+	if (n < 1)
+	{
+		printf(" ");
+	}
 	if (n == 1)
 	{
 		printf("%d", a[0]);
