@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * print_rev - prints a string in reverese
  * @s: string to be reveresed
