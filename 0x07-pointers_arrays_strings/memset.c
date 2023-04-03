@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * *_memset - replaces first n places with char b
  * @s: array to be editied
@@ -13,7 +14,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
 
-	for (i = 0; i< n; i++)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
