@@ -15,12 +15,11 @@ char *_strcat(char *dest, char *src)
 	int k = (i + j);
 	int n;
 	int m = 0;
-
+	
 	for (n = i; n < k; n++)
 	{
 		dest[n] = src[m];
 		m = m + 1;
 	}
-
 	return (dest);
 }
