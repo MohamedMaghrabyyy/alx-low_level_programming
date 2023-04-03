@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * *_memset - replaces first n places with char b
+ * _memset - replaces first n places with char b
  * @s: array to be editied
  * @b: char to be inserted to first n places
  * @n: first n places to insert in
