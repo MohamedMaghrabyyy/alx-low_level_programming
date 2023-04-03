@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * *_strcat - appends one string to another
  * @dest - string to be extended
@@ -20,5 +21,6 @@ char *_strcat(char *dest, char *src)
 		dest[n] = src[m];
 		m = m + 1;
 	}
+
 	return (dest);
 }
