@@ -1,22 +1,21 @@
-#include <stdio.h>
 /**
- * *_memset - replace first n places with char b
- * @s: passed array
- * @b: char to be places in first n places
- * @n: first n places to insert in
+ * _memset - fills n bytes of memory
  *
- * Return: array after modficitations
+ * @s: pointer to start of memory area
+ * @b: constant byte to fill with
+ * @n: num bytes to fill in
+ *
+ * Return: pointer to beginning of memory area s
  */
-
-
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i = 0;
 	char *start = s;
 
-	for (i = 0; i < n; i++)
+	while (i < n)
 	{
-		s[i] = b;
+		*s++ = b;
+		i++;
 	}
 	return (start);
 }
