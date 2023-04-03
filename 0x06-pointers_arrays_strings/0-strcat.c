@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * *_strcat - appends one string to another
- * @dest - string to be extended
- * @src - string to be appended to the other
+ * @*dest - string to be extended
+ * @*src - string to be appended to the other
  *
  * Return: final appended string
  */
