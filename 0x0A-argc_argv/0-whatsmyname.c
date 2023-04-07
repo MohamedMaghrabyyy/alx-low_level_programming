@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * @argc: number of arguments
- * @*argv: array of pointers to arguments 
+ * @argv: array of pointers to arguments 
  *
  * Return: nothing
  */
