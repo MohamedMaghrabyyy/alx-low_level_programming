@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i;
-	int flag = 0;
 
 	if (argc == 1)
 	{
@@ -29,14 +28,12 @@ int main(int argc, char *argv[])
 			else
 			{
 				printf("Error\n");
-				flag = 1;
-				break;
+				return (1);
+				
 			}
 		}
-		if (flag == 0)
-		{
-			printf("%d\n", sum);
-		}
+		printf("%d\n", sum);
+		
 	}
 	return (0);
 }
