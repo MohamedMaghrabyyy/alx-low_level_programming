@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  * @argc: number of arguments
  * @argv: array of pointers to arguments 
  *
- * Return: nothing
+ * Return:0 (terminates)
  */
 
 
