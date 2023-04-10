@@ -5,7 +5,7 @@
  * @argc: number of arguments
  * @argc: array of pointers to arguments
  *
- * Return: nothing
+ * Return: 0 (terminates)
  */
 int main(int argc, char *argv[])
 {
@@ -17,6 +17,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
-
 	return (0);
 }
