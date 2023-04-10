@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * @argc: number of arguments
- * @argc: array of pointers to arguments
+ * @argv: array of pointers to arguments
  *
  * Return: 0 (terminates)
  */
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		printf("%ld\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	return (0);
 }
