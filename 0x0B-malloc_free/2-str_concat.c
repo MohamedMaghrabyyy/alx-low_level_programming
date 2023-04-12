@@ -19,11 +19,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		len1 = 0;
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		len2 = 0;
+		s2 = "";
 	}
 	len1 = strlen(s1);
 	len2 = strlen(s2);
@@ -32,12 +32,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (i <= len1)
+	while (i < len1)
 	{
 		*(arr + i) = s1[i];
 		i++;
 	}
-	while (j <= len2)
+	while (j < len2)
 	{
 		*(arr + i + j) = s2[j];
 		j++;
