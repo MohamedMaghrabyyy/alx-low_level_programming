@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
  * _print_rev_recursion - prints reverssed string
  * @s: passed string
