@@ -11,8 +11,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned len1;
-	unsigned len2;
+	unsigned int len1;
+	unsigned int len2;
 	char *arr;
 	unsigned int i = 0;
 	unsigned int j = 0;
@@ -32,12 +32,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (i < len1)
+	while (i <= len1)
 	{
 		*(arr + i) = s1[i];
 		i++;
 	}
-	while (j < len2)
+	while (j <= len2)
 	{
 		*(arr + i + j) = s2[j];
 		j++;
