@@ -8,15 +8,16 @@
  */
 char *_strdup(char *str)
 {
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	unsigned int size = strlen(str);
 	char *arr;
 	unsigned int i = 0;
 	unsigned int j = 0;
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	arr = (char *)malloc(sizeof(char) * (size + 1));
 	if (arr == NULL)
 	{
