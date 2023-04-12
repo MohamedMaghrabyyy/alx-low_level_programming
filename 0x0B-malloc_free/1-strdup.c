@@ -13,11 +13,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	char *arr;
 	unsigned int i;
 	unsigned int j;
 	unsigned int size;
 	
+	char *arr;
+
+
 	i = 0;
 	j = 0;
 	size = strlen(str);
