@@ -8,9 +8,10 @@
  */
 char *_strdup(char *str)
 {
-	int size = strlen(str);
+	unsigned int size = strlen(str);
 	char *arr;
-	int i = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
 	if (str == NULL)
 	{
@@ -21,10 +22,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (i <= size)
+	while (i < size)
 	{
-		*(arr + i) = str[i];
+		arr[i] = str[j];
 		i++;
+		j++;
 	}
 	return (arr);
 }
