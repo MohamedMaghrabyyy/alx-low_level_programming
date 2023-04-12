@@ -1,49 +1,43 @@
-#include <string.h>
+#include "main.h"
 #include <stdlib.h>
+
 /**
- * **alloc_grid - make a 2d array and intialize it to zero
- * @width: number of rows
- * @height: number of columns
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: width of the array.
+ * @height: height of the array.
  *
- * Return: resulting array
+ * Return: pointer of an array of integers
  */
-
-
 int **alloc_grid(int width, int height)
 {
-	int **arr;
-	int i;
-	int j;
+	int **gridout;
+	int i, j;
 
+	if (width < 1 || height < 1)
+		return (NULL);
 
-	if (width <= 0 || height <= 0)
+	gridout = malloc(height * sizeof(int *));
+	if (gridout == NULL)
 	{
+		free(gridout);
 		return (NULL);
 	}
-	arr = malloc(sizeof(int *) * (width));
-	for (i = 0; i < width; i++)
+
+	for (i = 0; i < height; i++)
 	{
-		arr[i] = malloc(sizeof(int) * height);
-		if (arr[i] == NULL)
+		gridout[i] = malloc(width * sizeof(int));
+		if (gridout[i] == NULL)
 		{
 			for (i--; i >= 0; i--)
-				free(arr[i]);
-			free(arr);
+				free(gridout[i]);
+			free(gridout);
 			return (NULL);
 		}
 	}
-	if (arr == NULL)
-	{
-		free(arr);
-		return (NULL);
-	}
 
-	for (i = 0; i < width; i++)
-	{
-		for (j = 0; j < height; j++)
-		{
-			arr[i][j] = 0;
-		}
-	}
-	return (arr);
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			gridout[i][j] = 0;
+
+	return (gridout);
 }
