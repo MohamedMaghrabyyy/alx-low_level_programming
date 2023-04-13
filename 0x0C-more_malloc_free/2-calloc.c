@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *_calloc - allocates memory and set it to zeero
- * @nmemb: number of elements in memory
- * @size: size of one element in the array
+ * *_calloc - allocates memory and sets it to zero
+ * @nmemb: length of allocated memory
+ * @size: size of each element in allocated memory
  *
  * Return: allocated memory
  */
@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	ptr = (void*)malloc(size * nmemb);
+	ptr = malloc(size * nmemb);
 	if (ptr == NULL)
 	{
 		return (NULL);
