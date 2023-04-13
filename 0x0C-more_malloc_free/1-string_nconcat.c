@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i = 0;
 	int j = 0;
 
-	ptr = (char *)malloc(sizeof(char) * (a + n + 1));
+	ptr = malloc(sizeof(char) * (a + n + 1));
 	while (i < a)
 	{
 		*(ptr + i) = s1[i];
