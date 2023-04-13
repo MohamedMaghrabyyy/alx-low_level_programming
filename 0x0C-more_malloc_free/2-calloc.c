@@ -11,10 +11,9 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
-	char *mem;
+	char *filler;
 	int i = 0;
 	
-	mem = ptr;
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
@@ -24,9 +23,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+	filler = ptr;
 	while (i < (nmemb * size))
 	{
-		mem[i] = '\0';
+		filler[i] = '\0';
 		i++;
 	}
 	return (ptr);
