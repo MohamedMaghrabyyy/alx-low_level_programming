@@ -3,7 +3,7 @@
  * *malloc_checked - allocates memory
  * @b: size of allocated address
  *
- * Return: nothing
+ * Return: address of allocated memory
  */
 
 
@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *a;
 	
-	a = (void*)malloc(b);
+	a = malloc(b);
 	if (a == NULL)
 	{
 		exit(98);
