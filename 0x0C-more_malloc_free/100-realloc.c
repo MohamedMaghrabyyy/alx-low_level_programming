@@ -44,6 +44,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			*(arr2 + i) = *(arr1 + i);
 			i++;
 		}
+		free(arr1);
 	}
 	else
 	{
@@ -52,6 +53,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			*(arr2 + i) = *(arr1 + i);
 			i++;
 		}
+		free(arr1);
 	}
 	return (second);
 }
