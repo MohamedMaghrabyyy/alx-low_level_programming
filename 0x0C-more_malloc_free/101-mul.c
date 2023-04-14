@@ -10,7 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	long int num1 , num2;
+	long long int num1;
+	long long int num2;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
