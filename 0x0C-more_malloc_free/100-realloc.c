@@ -38,7 +38,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 
-	arr1 = ptri;
+	arr1 = ptr;
 	arr2 = second;
 
 	if (new_size > old_size)
