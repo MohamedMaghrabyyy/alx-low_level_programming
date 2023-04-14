@@ -10,8 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	long long int num1;
-	long long int num2;
+	long double num1;
+	long double num2;
 
 	if (argc != 3)
 	{
@@ -25,6 +25,6 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	printf("%lli\n", num1  * num2);
+	printf("%Lf\n", num1  * num2);
 	return (0);
 }
