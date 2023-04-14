@@ -30,17 +30,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		return (ptr);
 	}
-
 	second = malloc(new_size);
-
+	
 	if (second == NULL)
 	{
 		return (NULL);
 	}
-
 	arr1 = ptr;
 	arr2 = second;
-
 	if (new_size > old_size)
 	{
 		while (i < old_size)
