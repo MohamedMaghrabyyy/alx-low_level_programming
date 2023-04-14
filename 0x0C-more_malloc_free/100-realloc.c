@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * *_realloc - copies elements from allocated memory to a new one
- * @ptr: old allocated memory
+ * @ptrr: old allocated memory
  * @old_size: size of ptr
  * @new_size: size of new allocated memory
  *
