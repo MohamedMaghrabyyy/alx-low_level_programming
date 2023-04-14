@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * *_realloc - copies elements from allocated memory to a new one
- * @ptrr: old allocated memory
+ * @ptr: old allocated memory
  * @old_size: size of ptr
  * @new_size: size of new allocated memory
  *
@@ -30,13 +30,17 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		return (ptr);
 	}
+
 	second = malloc(new_size);
+
 	if (second == NULL)
 	{
 		return (NULL);
 	}
-	arr1 = ptr;
+
+	arr1 = ptri;
 	arr2 = second;
+
 	if (new_size > old_size)
 	{
 		while (i < old_size)
@@ -52,7 +56,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		{
 			*(arr2 + i) = *(arr1 + i);
 			i++;
-		}
+		}i
 		free(arr1);
 	}
 	return (second);
