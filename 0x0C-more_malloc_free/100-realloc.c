@@ -15,8 +15,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	unsigned int i = 0;
 	char *arr1;
 	char *arr2;
-	
-	if (ptr == NULL)
+
+	if (ptr == NULL || old_size == new_size)
 	{
 		ptr = malloc(new_size);
 		return (ptr);
@@ -26,16 +26,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-	if (old_size == new_size)
-	{
-		return (ptr);
-	}
 	second = malloc(new_size);
-	
 	if (second == NULL)
-	{
 		return (NULL);
-	}
 	arr1 = ptr;
 	arr2 = second;
 	if (new_size > old_size)
