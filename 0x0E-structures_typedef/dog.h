@@ -7,10 +7,10 @@
  * @owner: owner of dog
  *
  */
-typedef struct Dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog;
+} dogg;
 #endif
