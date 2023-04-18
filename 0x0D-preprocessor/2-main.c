@@ -8,9 +8,9 @@
  */
 
 
-int main(int __attribute__((unused))argc, char **argv)
+int main(void)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", __BASE_FILE__);
 
 	return (0);
 }
