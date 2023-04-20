@@ -1,9 +1,9 @@
 #include "3-calc.h"
 /**
- * get_op_func - functions that determine operation
+ * get_op_func - returns a function pointer
  * @s: passed operator
  *
- * Return: function pointer to op functions
+ * Return: function pointer
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -17,12 +17,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op))
+	while (i < 5)
 	{
 		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
 		i++;
 	}
-	
 	return (NULL);
 }
