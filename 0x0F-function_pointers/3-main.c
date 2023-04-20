@@ -30,13 +30,6 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	o = *argv[2];
-	
-	if ((o == '/' || o == '%') && (num2 == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
 
 	i = ptr(num1, num2);
 	
