@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include "variadic_functions.h"
 /**
  * sum_them_all - sums values of all optional passed args
