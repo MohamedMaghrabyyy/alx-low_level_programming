@@ -9,8 +9,8 @@
 int main(int argc, char **argv)
 {
 	int num1, num2, i;
-
 	int (*ptr)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -30,6 +30,4 @@ int main(int argc, char **argv)
 	printf("%d\n", i);
 
 	return (0);
-
-	
 }
