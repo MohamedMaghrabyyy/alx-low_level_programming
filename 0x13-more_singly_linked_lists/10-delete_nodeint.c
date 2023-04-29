@@ -23,6 +23,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		counter = counter->next;
 		i++;
 	}
+	if (index == 0)
+	{
+		*head = ptr_next;
+		free(ptr);
+		return (1);
+	}
 	while (index > 0 && ptr != NULL)
 	{
 		ptr = ptr->next;
