@@ -41,7 +41,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	while (prevPtr->next != ptr)
 		prevPtr = prevPtr->next;
 	new->next = ptr;
-	prev->next = new;
+	prevPtr->next = new;
 	new->n = n;
 	return (new);
 }
