@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i = 0;
 	unsigned int num;
 	unsigned int result = 0;
-	unsigned int size = 0;
+	unsigned int size;
 	unsigned int digit;
 
 	if (b == NULL)
@@ -31,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		i++;
 	}
-	for (size; b[size]; size++)
+	for (size = 0; b[size]; size++)
 		;
 	if (size == 1)
 	{
