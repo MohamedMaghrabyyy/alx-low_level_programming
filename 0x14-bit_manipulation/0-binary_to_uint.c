@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * binary_to_uint - converts a binary representation of a number to decimal
  * @b: passed array of characters

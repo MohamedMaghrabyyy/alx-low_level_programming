@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	int i;
 	int x = 0;
 	unsigned long int digit;
-	int  array[32];
+	unsigned long int array[32];
 
 	if (n == 0)
 		putchar(48);
