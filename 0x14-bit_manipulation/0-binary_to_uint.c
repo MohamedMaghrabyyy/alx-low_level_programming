@@ -1,5 +1,15 @@
 #include "main.h"
-#include <math.h>
+/**
+ * recursive_two - recursively multiplies two instead of using pow()
+ * @num_of_iter: number of times required to multiply 2
+ * Return: result
+ */
+int recursive_two(int num_of_iter)
+{
+	if (num_of_iter == 0)
+		return (1);
+	return (2 * recursive_two(num_of_iter - 1));
+}
 /**
  * binary_to_uint - converts a binary representation of a number to decimal
  * @b: passed array of characters
@@ -21,7 +31,6 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		i++;
 	}
-	i = 0;
 	for (size; b[size]; size++)
 		;
 	if (size == 1)
@@ -34,7 +43,7 @@ unsigned int binary_to_uint(const char *b)
 	while (num != 0)
 	{
 		digit = num % 10;
-		result += digit * pow(2, size);
+		result += digit * recursive_two(size);
 		size++;
 		num /= 10;
 	}
