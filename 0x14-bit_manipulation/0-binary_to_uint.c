@@ -4,7 +4,7 @@
  * @num_of_iter: number of times required to multiply 2
  * Return: result
  */
-int recursive_two(int num_of_iter)
+unsigned int recursive_two(unsigned int num_of_iter)
 {
 	if (num_of_iter == 0)
 		return (1);
@@ -43,7 +43,7 @@ unsigned int binary_to_uint(const char *b)
 	while (num != 0)
 	{
 		digit = num % 10;
-		result += digit * recursive_two(size);
+		result += (digit * recursive_two(size));
 		size++;
 		num /= 10;
 	}
