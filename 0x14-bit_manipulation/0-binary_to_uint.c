@@ -38,6 +38,7 @@ unsigned int binary_to_uint(const char *b)
 	if (size == 1)
 	{
 		result = atoi(b);
+		free(b);
 		return (result);
 	}
 	num = atoi(b);
@@ -49,5 +50,6 @@ unsigned int binary_to_uint(const char *b)
 		size++;
 		num /= 10;
 	}
+	free(b);
 	return (result);
 }
