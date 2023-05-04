@@ -33,6 +33,8 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (size = 0; b[size]; size++)
 		;
+	if (size == 0)
+		return (0);
 	if (size == 1)
 	{
 		result = atoi(b);
