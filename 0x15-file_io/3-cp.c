@@ -27,7 +27,9 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	string = malloc(sizeof(char) * fd1);
-	r_1st = read(fd1, string, 1024);
+	if (string == NULL)
+		exit(1);
+	r_1st = read(argv[1], string, fd1);
 
 	fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd2 == -1)
@@ -35,7 +37,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	w_2nd = write(fd2, string, r_1st);
+	w_2nd = write(argv[2], string, fd2);
 	c_test = close(fd1);
 	if (c_test == -1)
 	{
@@ -48,5 +50,6 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error: Can't close fd %s", argv[2]);
 		exit(100);
 	}
+	free(string);
 	return (0);
 }
