@@ -7,8 +7,9 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = &filename;
+	FILE *fp;
 	char ch[letters];
+
 	if (filename == NULL)
 		return (0);
 	fp = fopen(filename, "r");
