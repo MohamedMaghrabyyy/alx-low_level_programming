@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	c_test2 = close(fd2);
 	if (c_test == -1 || c_test2 == -1)
 	{
-		fprintf(stderr, "Error: Can't close fd %s", argv[2]);
+		fprintf(stderr, "Error: Can't close fd %s\n", argv[2]);
 		exit(100);
 	}
 	free(string);
