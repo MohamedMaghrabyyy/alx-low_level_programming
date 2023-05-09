@@ -23,7 +23,10 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (argv[1] == NULL)
+		fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	else
+		fd2 = open(argv[2], O_WRONLY | O_TRUNC);
 	w_2nd = write(fd2, ch, r_1st);
 	if (fd2 == -1 || w_2nd == -1)
 	{
