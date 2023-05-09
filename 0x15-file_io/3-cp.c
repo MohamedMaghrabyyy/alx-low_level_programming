@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: cp file_from file_to");
+		fprintf(stderr, "Usage: cp %s %s\n", argv[1], argv[2]);
 		exit(97);
 	}
 	fd1 = open(argv[1], O_RDONLY);
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	w_2nd = write(fd2, ch, r_1st);
 	if (fd2 == -1 || w_2nd == -1)
 	{
