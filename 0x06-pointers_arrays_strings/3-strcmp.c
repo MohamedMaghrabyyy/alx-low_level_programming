@@ -5,10 +5,10 @@
  * _strcmp - compares to strings
  * @s1: first string
  * @s2: second string
- * Return: 0 (if s1 & s2 are the same) 
+ * Return: 0 (if s1 & s2 are the same)
  * postive number (s1 is longer)
  * negative number (s2 is longer)
- */ 
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i, j, k, bigger;
@@ -41,7 +41,7 @@ int _strcmp(char *s1, char *s2)
 			}
 		}
 	}
-	if (!flag)
+	if (flag == 0)
 		return (0);
 	else
 		return (bigger);
