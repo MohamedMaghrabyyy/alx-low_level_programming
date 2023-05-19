@@ -28,21 +28,6 @@ int _strcmp(char *s1, char *s2)
 		return (bigger);
 	}
 	else
-	{
-		for (k = 0; k < i; k++)
-		{
-			if (s1[k] == s2[k])
-				continue;
-			else
-			{
-				bigger = s1[k] - s2[k];
-				flag = 1;
-				break;
-			}
-		}
-	}
-	if (flag == 0)
 		return (0);
-	else
-		return (bigger);
+	
 }
