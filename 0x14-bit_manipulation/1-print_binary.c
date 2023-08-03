@@ -7,8 +7,8 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int mask;
-	unsigned int i;
-	unsigned int x = 0;
+	unsigned long int i;
+	unsigned long int x = 0;
 	unsigned long int digit;
 	unsigned long int array[32];
 
