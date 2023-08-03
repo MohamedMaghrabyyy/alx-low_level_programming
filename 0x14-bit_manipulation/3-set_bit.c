@@ -3,7 +3,7 @@
  * set_bit - sets the value a bit
  * @n: passed pointer to an int
  * @index: index of the element to set
- * Return:
+ * Return: returns 1 if the bet is set or 0
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
